@@ -1,2 +1,3 @@
 # Info-Klausur
-Info klausur sven, patrick, arthur pascal
+Informatik Klausur:
+Sven, Artur, Patrick, Pascal
