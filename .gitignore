@@ -9,9 +9,17 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
+<<<<<<< HEAD
 
 #.iml
 Info-Klausur.iml
 
 #.idea
 .idea
+=======
+#.iml
+ Info-Klausur.iml
+ 
+ #.idea
+ .idea
+>>>>>>> pomxml
