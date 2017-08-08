@@ -15,3 +15,7 @@ The coding language is English.
 Hereafter, the conversations on Github will be German.
 
 Für eine zuverlässige und verantwortungsbewusste Zusammenarbeit bekennen wir uns zum 'Code of Conduct' in 'open source projects'. Weiteres dazu ist im Respository hinterlegt. 
+
+## LICENCE
+
+Die LICENCE Datei ist im Respository hinterlegt.
