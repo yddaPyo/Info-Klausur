@@ -39,6 +39,32 @@ class Network {
     }
 
 
+    /**
+     * this is the comparison of the number of cars on the road with the capacity of the network
+     * comparison of the driving cars are identical true; see car.drive() in Car.kt
+     *
+     */
+
+    fun checkCapacityAndCompare() {
+        countCarsOnTheRoad()
+        if(carsOnTheRoad <= capacity) {
+            //here starts the loop for delaying or driving
+            for(car in cars) {
+                if(car.wantsToDrive == true) {
+                    car.drive()
+                }
+            }
+        } else {
+            for(car in cars){
+                car.delayed = true
+            }
+        }
+    }
+
+
+}
+
+
 
 
 }

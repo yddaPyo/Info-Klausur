@@ -36,6 +36,15 @@ class Car {
      * next.Boolean for the next input of boolean
      */
 
+
+    /**
+     * announceWantsToDrive just for the Output
+     */
+    fun announceWantsToDrive() {
+        println("ID: " + id + " wantsToDrive: " + wantsToDrive)
+    }
+
+
     fun drive() {
         this.driving = true
     }
