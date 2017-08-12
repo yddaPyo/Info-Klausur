@@ -1,6 +1,4 @@
-/**
- * Created by Sven on 09.08.2017.
- */
+
 
 import java.util.Random
 
@@ -41,7 +39,13 @@ class Car {
      * announceWantsToDrive just for the Output
      */
     fun announceWantsToDrive() {
-        println("ID: " + id + " wantsToDrive: " + wantsToDrive)
+        if(wantsToDrive) {
+            println("Car " + id + " wants to drive")
+        }  else {
+            println("Car " + id + " does not want to drive")
+            }
+
+
     }
 
 
