@@ -28,6 +28,7 @@ fun main(args: Array<String>) {
 
     fun simulationStep() {
         for (car in cars) {
+            car.randomizeWantsToDrive()
             car.announceWantsToDrive()
         }
 
@@ -47,7 +48,7 @@ fun main(args: Array<String>) {
     var carsOnTheRoad = 0
     fun scenario() {
 
-        for (i in 0..23) {
+        for (i in 0..3) {
             println("Driving for " + i + " hours")
             simulationStep()
             if (networkcapacity >= carsOnTheRoad) {
@@ -92,7 +93,7 @@ fun main(args: Array<String>) {
     }
 
 
-    fun networkToCsv(network: Network, fileName: String) {
+    fun NetworkToCsv(network: Network, fileName: String) {
         var settings = CsvWriterSettings()
         settings.format.setLineSeperator("\n")
         var writer = AccessToFile().getWriter(fileName)
@@ -108,15 +109,14 @@ fun main(args: Array<String>) {
             var line: Array<Any> = arrayOf(id, wantsToDrive, delayed)
             RowOfACar.add(line)
 
-
         }
 
 
-        csvWriter.writeRowsAndClose(RowOfACar)
     }
     scenario()
     var road = networkfromcsv("/cars.csv")
     road.simulateTraffic()
-    networkToCsv(road, "Result.csv")
-
+    NetworkToCsv(road,"Result.csv")
 }
+
+
