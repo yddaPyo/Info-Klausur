@@ -20,6 +20,10 @@ Um die Applikation auszuführen muss man auf seinem Rechner zunächst Windows Powe
 Darüber navigiert man sich in den Ordner, in dem die .jar Datei gespeichert ist (target Ordner).
 Jetzt ist der Befehl "java -jar InformatikKlausur-1.0-SNAPSHOT-jar-with-dependencies.jar" einzugeben.
 
+Zu Aufgabe 2:
+Befolgen Sie die obigen Anweisungen bis Sie sich im Ordner mit der .jar Datei befinden. Nun geben Sie den Befehl: 
+``` java -jar InformatikKlausur-2.0-SNAPSHOT-jar-with-dependencies.jar``` ein.
+
 
 ## Sprachen
 
